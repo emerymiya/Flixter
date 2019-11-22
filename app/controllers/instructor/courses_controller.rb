@@ -17,11 +17,6 @@ class Instructor::CoursesController < ApplicationController
     @course = Course.find(params[:id])
   end
 
-  def index
-    @courses = Course.all
-  end
-end
-
   private
 
   def course_params
